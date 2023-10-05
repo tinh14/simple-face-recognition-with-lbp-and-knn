@@ -21,6 +21,8 @@ test_feature = img_lbp.flatten()
 predicted_label_array = knn_model.predict([test_feature])
 probability_maxtrix = knn_model.predict_proba([test_feature])
 
+print(probability_maxtrix)
+
 predicted_label = predicted_label_array[0];
 probability = round(max(probability_maxtrix[0]) * 100, 2);
 
