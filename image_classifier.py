@@ -30,5 +30,5 @@ for person_name in os.listdir(c.PROCESSED_DATASET_PATH):
 features = np.array(features)
 labels = np.array(labels)
 
-np.save(c.FEATURES_PATH, features);
-np.save(c.LABELS_PATH, labels);
+np.save(c.FEATURES_PATH, features)
+np.save(c.LABELS_PATH, labels)

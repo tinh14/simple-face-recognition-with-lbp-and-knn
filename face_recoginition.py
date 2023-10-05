@@ -22,7 +22,7 @@ predicted_label_array = knn_model.predict([test_feature])
 probability_maxtrix = knn_model.predict_proba([test_feature])
 
 predicted_label = predicted_label_array[0];
-probability = round(probability_maxtrix[0][0] * 100, 2);
+probability = round(max(probability_maxtrix[0]) * 100, 2);
 
 print(f"Predicted label: {predicted_label}")
 print(f"Probability: {probability}%")
